@@ -6,11 +6,7 @@ const questionSchema=mongoose.Schema({
         type:String,
         require:true
     },
-    Answer:[{
-        type:mongoose.Types.ObjectId,
-        ref:'Answers',
-        require:false
-    }]
+   
 
 })
 module.exports = mongoose.model('Question', questionSchema)
